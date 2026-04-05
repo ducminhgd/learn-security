@@ -1,7 +1,7 @@
 ---
 title: "Ghost's 2-Year Cybersecurity Training Programme — Master Syllabus"
 tags: [syllabus, curriculum, roadmap]
-updated: 2026-04-04
+updated: 2026-04-05
 ---
 
 # Ghost's 2-Year Cybersecurity Training Programme
