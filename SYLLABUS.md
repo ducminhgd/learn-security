@@ -478,7 +478,21 @@ Goal: Expand beyond web — auth attacks, cloud, mobile, infrastructure, privile
 | 242 | `04-BroadSurface-04/DAY-0242-C2-Concepts-and-Sliver-Lab.md` | C2 architecture, beaconing, Sliver — deploy + beacon |
 | 243 | `04-BroadSurface-04/DAY-0243-Living-off-the-Land.md` | LOLBins/LOLBAS, native tools for attacker purposes |
 | 244 | `04-BroadSurface-04/DAY-0244-Infrastructure-Detection-and-Hardening.md` | DHCP snooping, dynamic ARP inspection, 802.1X, EDR basics |
-| 245–259 | `04-BroadSurface-04/DAY-XXXX-Infrastructure-Practice-Days.md` | Practice: mixed HTB boxes, privesc challenges |
+| 245 | `04-BroadSurface-04/DAY-0245-Infrastructure-Practice-Day-1.md` | Practice: MITM and credential capture sprint |
+| 246 | `04-BroadSurface-04/DAY-0246-Infrastructure-Practice-Day-2.md` | Practice: SMB relay sprint |
+| 247 | `04-BroadSurface-04/DAY-0247-Infrastructure-Practice-Day-3.md` | Practice: Linux PrivEsc HTB machine (Easy) |
+| 248 | `04-BroadSurface-04/DAY-0248-Infrastructure-Practice-Day-4.md` | Practice: Linux PrivEsc HTB machine (Medium) |
+| 249 | `04-BroadSurface-04/DAY-0249-Infrastructure-Practice-Day-5.md` | Practice: Linux PrivEsc SUID/cron/kernel drills |
+| 250 | `04-BroadSurface-04/DAY-0250-Milestone-250-Days.md` | Milestone 250 — infrastructure retrospective |
+| 251 | `04-BroadSurface-04/DAY-0251-Infrastructure-Practice-Day-6.md` | Practice: Windows PrivEsc lab |
+| 252 | `04-BroadSurface-04/DAY-0252-Infrastructure-Practice-Day-7.md` | Practice: container escape + post-exploitation chain |
+| 253 | `04-BroadSurface-04/DAY-0253-Infrastructure-Practice-Day-8.md` | Practice: C2 beacon management + LOLBins evasion |
+| 254 | `04-BroadSurface-04/DAY-0254-Infrastructure-Practice-Day-9.md` | Practice: full infrastructure kill chain (timed) |
+| 255 | `04-BroadSurface-04/DAY-0255-Infrastructure-Practice-Day-10.md` | Practice: mixed HTB box (network + PrivEsc) |
+| 256 | `04-BroadSurface-04/DAY-0256-Infrastructure-Practice-Day-11.md` | Practice: detection engineering sprint |
+| 257 | `04-BroadSurface-04/DAY-0257-Infrastructure-Practice-Day-12.md` | Practice: full kill chain speed run (< 45 min) |
+| 258 | `04-BroadSurface-04/DAY-0258-Infrastructure-Practice-Day-13.md` | Practice: mixed Windows/Linux CTF sprint |
+| 259 | `04-BroadSurface-04/DAY-0259-Infrastructure-Practice-Day-14.md` | Practice: module review and gate preparation |
 | 260 | `04-BroadSurface-04/DAY-0260-BroadSurface-Competency-Check.md` | Self-assessment + lab submission |
 
 ---
