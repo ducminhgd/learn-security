@@ -1,7 +1,7 @@
 ---
 title: "Ghost's Training Programme — Year 1: Bug Bounty Hunter | Year 2: Deep Hacker"
 tags: [syllabus, curriculum, roadmap, bug-bounty, hacking]
-updated: 2026-04-05
+updated: 2026-04-28
 ---
 
 # Ghost's 2-Year Cybersecurity Training Programme
@@ -412,7 +412,19 @@ Goal: Expand beyond web — auth attacks, cloud, mobile, infrastructure, privile
 | 194 | `04-BroadSurface-02/DAY-0194-Detecting-Cloud-Attacks.md` | CloudTrail, GuardDuty, alert on metadata queries |
 | 195 | `04-BroadSurface-02/DAY-0195-Cloud-Hardening.md` | IMDSv2, SCPs, resource-based policies, least privilege |
 | 196 | `04-BroadSurface-02/DAY-0196-Cloud-Security-Review.md` | Review all cloud attack classes |
-| 197–209 | `04-BroadSurface-02/DAY-XXXX-Cloud-Practice-Days.md` | Practice days: cloud-focused HTB + dedicated labs |
+| 197 | `04-BroadSurface-02/DAY-0197-Cloud-Practice-IAM-PrivEsc.md` | Practice: IAM privilege escalation drills |
+| 198 | `04-BroadSurface-02/DAY-0198-Cloud-Practice-S3-Attacks.md` | Practice: S3 misconfiguration attack surface |
+| 199 | `04-BroadSurface-02/DAY-0199-Cloud-Practice-Lambda-Serverless.md` | Practice: Lambda + serverless attack patterns |
+| 200 | `04-BroadSurface-02/DAY-0200-Milestone-200-Days-Cloud-Review.md` | Milestone 200 — cloud module retrospective |
+| 201 | `04-BroadSurface-02/DAY-0201-Cloud-Practice-Azure.md` | Practice: Azure AD + managed identity attacks |
+| 202 | `04-BroadSurface-02/DAY-0202-Cloud-Practice-GCP.md` | Practice: GCP service accounts + metadata API |
+| 203 | `04-BroadSurface-02/DAY-0203-Cloud-Practice-Persistence-Detection.md` | Practice: detect and hunt cloud persistence |
+| 204 | `04-BroadSurface-02/DAY-0204-Cloud-Practice-CloudTrail-Evasion.md` | Practice: CloudTrail evasion techniques |
+| 205 | `04-BroadSurface-02/DAY-0205-Cloud-Practice-Bug-Bounty-Recon.md` | Practice: cloud bug bounty recon methodology |
+| 206 | `04-BroadSurface-02/DAY-0206-Cloud-Practice-Container-Kubernetes.md` | Practice: container escape + Kubernetes RBAC exploitation |
+| 207 | `04-BroadSurface-02/DAY-0207-Cloud-Practice-Kill-Chain-Speed-Run.md` | Practice: full kill chain timed speed run |
+| 208 | `04-BroadSurface-02/DAY-0208-Cloud-Practice-Mock-Bug-Bounty.md` | Practice: mock bug bounty cloud engagement |
+| 209 | `04-BroadSurface-02/DAY-0209-Cloud-Practice-Report-Writing.md` | Practice: cloud finding report writing sprint |
 | 210 | `04-BroadSurface-02/DAY-0210-Cloud-Competency-Check.md` | Self-assessment + lab submission |
 
 ---
@@ -435,7 +447,13 @@ Goal: Expand beyond web — auth attacks, cloud, mobile, infrastructure, privile
 | 220 | `04-BroadSurface-03/DAY-0220-Mobile-Bug-Bounty-Methodology.md` | Mobile-focused programmes, scope analysis, payout patterns |
 | 221 | `04-BroadSurface-03/DAY-0221-Mobile-Full-Assessment-Lab.md` | Lab: complete Android assessment from APK to RCE |
 | 222 | `04-BroadSurface-03/DAY-0222-Mobile-Detection-and-Hardening.md` | Certificate pinning, root detection, obfuscation, ProGuard |
-| 223–229 | `04-BroadSurface-03/DAY-XXXX-Mobile-Practice-Days.md` | Practice days: mobile CTF + bug bounty recon |
+| 223 | `04-BroadSurface-03/DAY-0223-Mobile-Practice-Day-1.md` | Practice: HTB mobile static analysis sprint |
+| 224 | `04-BroadSurface-03/DAY-0224-Mobile-Practice-Day-2.md` | Practice: Frida scripting and dynamic analysis |
+| 225 | `04-BroadSurface-03/DAY-0225-Mobile-Practice-Day-3.md` | Practice: mobile API enumeration and IDOR testing |
+| 226 | `04-BroadSurface-03/DAY-0226-Mobile-Practice-Day-4.md` | Practice: WebView and Intent attack patterns |
+| 227 | `04-BroadSurface-03/DAY-0227-Mobile-Practice-Day-5.md` | Practice: iOS app analysis and jailbreak bypass |
+| 228 | `04-BroadSurface-03/DAY-0228-Mobile-Practice-Day-6.md` | Practice: live bug bounty recon on a mobile programme |
+| 229 | `04-BroadSurface-03/DAY-0229-Mobile-Practice-Day-7.md` | Practice: module review, write-up, gate preparation |
 | 230 | `04-BroadSurface-03/DAY-0230-Mobile-Competency-Check.md` | Self-assessment + lab submission |
 
 ---
