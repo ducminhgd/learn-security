@@ -1,7 +1,7 @@
 ---
 title: "Ghost's Training Programme — Year 1: Bug Bounty Hunter | Year 2: Deep Hacker"
 tags: [syllabus, curriculum, roadmap, bug-bounty, hacking]
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 # Ghost's 2-Year Cybersecurity Training Programme
@@ -535,35 +535,90 @@ Goal: Operate as a professional bug bounty hunter. Find real bugs. Get paid.
 
 | Day | File | Topic |
 |---|---|---|
-| 291–295 | `05-BugBountyOps-02/DAY-XXXX-HTB-Web-Series.md` | HackTheBox web machines x5 |
-| 296–300 | `05-BugBountyOps-02/DAY-XXXX-HTB-Linux-Series.md` | HackTheBox Linux machines x5 |
-| 301–305 | `05-BugBountyOps-02/DAY-XXXX-HTB-API-Series.md` | API-focused challenges x5 |
-| 306–310 | `05-BugBountyOps-02/DAY-XXXX-HTB-Cloud-Series.md` | Cloud security labs x5 |
-| 311–315 | `05-BugBountyOps-02/DAY-XXXX-CTF-Web-Competition.md` | Web CTF competition practice |
-| 316–325 | `05-BugBountyOps-02/DAY-XXXX-Weak-Area-Reinforce.md` | Identify weak spots from the last 290 days; re-lab them |
-| 326–330 | `05-BugBountyOps-02/DAY-XXXX-Write-Up-Sprint.md` | Write 5 public write-ups for completed challenges |
+| 291 | `05-BugBountyOps-02/DAY-0291-HTB-Web-Series-Day-01.md` | HTB Web: SQLi exploitation |
+| 292 | `05-BugBountyOps-02/DAY-0292-HTB-Web-Series-Day-02.md` | HTB Web: SSRF and XXE |
+| 293 | `05-BugBountyOps-02/DAY-0293-HTB-Web-Series-Day-03.md` | HTB Web: Auth bypass |
+| 294 | `05-BugBountyOps-02/DAY-0294-HTB-Web-Series-Day-04.md` | HTB Web: Advanced chaining |
+| 295 | `05-BugBountyOps-02/DAY-0295-HTB-Web-Series-Day-05.md` | HTB Web: API exploitation |
+| 296 | `05-BugBountyOps-02/DAY-0296-HTB-Linux-Series-Day-01.md` | HTB Linux: Easy box |
+| 297 | `05-BugBountyOps-02/DAY-0297-HTB-Linux-Series-Day-02.md` | HTB Linux: Medium box |
+| 298 | `05-BugBountyOps-02/DAY-0298-HTB-Linux-Series-Day-03.md` | HTB Linux: Hard / CVE-based |
+| 299 | `05-BugBountyOps-02/DAY-0299-HTB-Linux-Series-Day-04.md` | HTB Linux: Container escape |
+| 300 | `05-BugBountyOps-02/DAY-0300-Milestone-300-Days.md` | Milestone: 300-day retrospective and skills self-assessment |
+| 301 | `05-BugBountyOps-02/DAY-0301-HTB-API-Series-Day-01.md` | HTB API: REST BOLA/BFLA |
+| 302 | `05-BugBountyOps-02/DAY-0302-HTB-API-Series-Day-02.md` | HTB API: GraphQL introspection |
+| 303 | `05-BugBountyOps-02/DAY-0303-HTB-API-Series-Day-03.md` | HTB API: Mass assignment + JWT |
+| 304 | `05-BugBountyOps-02/DAY-0304-HTB-API-Series-Day-04.md` | HTB API: Rate limiting bypass |
+| 305 | `05-BugBountyOps-02/DAY-0305-HTB-API-Series-Day-05.md` | HTB API: Full API assessment |
+| 306 | `05-BugBountyOps-02/DAY-0306-HTB-Cloud-Series-Day-01.md` | Cloud: AWS IAM misconfiguration |
+| 307 | `05-BugBountyOps-02/DAY-0307-HTB-Cloud-Series-Day-02.md` | Cloud: SSRF to metadata |
+| 308 | `05-BugBountyOps-02/DAY-0308-HTB-Cloud-Series-Day-03.md` | Cloud: S3 misconfiguration |
+| 309 | `05-BugBountyOps-02/DAY-0309-HTB-Cloud-Series-Day-04.md` | Cloud: Azure and GCP patterns |
+| 310 | `05-BugBountyOps-02/DAY-0310-HTB-Cloud-Series-Day-05.md` | Cloud: Full cloud kill chain |
+| 311 | `05-BugBountyOps-02/DAY-0311-CTF-Web-Competition-Day-01.md` | CTF: Warm-up and recon |
+| 312 | `05-BugBountyOps-02/DAY-0312-CTF-Web-Competition-Day-02.md` | CTF: Authentication and session attacks |
+| 313 | `05-BugBountyOps-02/DAY-0313-CTF-Web-Competition-Day-03.md` | CTF: Server-side injection |
+| 314 | `05-BugBountyOps-02/DAY-0314-CTF-Web-Competition-Day-04.md` | CTF: Logic flaws and business rules |
+| 315 | `05-BugBountyOps-02/DAY-0315-CTF-Web-Competition-Day-05.md` | CTF: Speed and strategy sprint |
+| 316 | `05-BugBountyOps-02/DAY-0316-Weak-Area-Reinforcement-Day-01.md` | Reinforcement: Gap identification and drill planning |
+| 317 | `05-BugBountyOps-02/DAY-0317-Weak-Area-Reinforcement-Day-02.md` | Reinforcement: Blind injection techniques |
+| 318 | `05-BugBountyOps-02/DAY-0318-Weak-Area-Reinforcement-Day-03.md` | Reinforcement: Advanced XSS and DOM |
+| 319 | `05-BugBountyOps-02/DAY-0319-Weak-Area-Reinforcement-Day-04.md` | Reinforcement: SSRF depth drill |
+| 320 | `05-BugBountyOps-02/DAY-0320-Weak-Area-Reinforcement-Day-05.md` | Reinforcement: OAuth 2.0 deep dive |
+| 321 | `05-BugBountyOps-02/DAY-0321-Weak-Area-Reinforcement-Day-06.md` | Reinforcement: Race conditions and business logic |
+| 322 | `05-BugBountyOps-02/DAY-0322-Weak-Area-Reinforcement-Day-07.md` | Reinforcement: XXE and deserialization |
+| 323 | `05-BugBountyOps-02/DAY-0323-Weak-Area-Reinforcement-Day-08.md` | Reinforcement: AWS IAM deep dive and Pacu |
+| 324 | `05-BugBountyOps-02/DAY-0324-Weak-Area-Reinforcement-Day-09.md` | Reinforcement: Integration — chain two weak areas |
+| 325 | `05-BugBountyOps-02/DAY-0325-Weak-Area-Reinforcement-Day-10.md` | Reinforcement: Re-assessment and progress measurement |
+| 326 | `05-BugBountyOps-02/DAY-0326-Write-Up-Sprint-Day-01.md` | Write-up: Public disclosure analysis |
+| 327 | `05-BugBountyOps-02/DAY-0327-Write-Up-Sprint-Day-02.md` | Write-up: Cloud and API bug analysis |
+| 328 | `05-BugBountyOps-02/DAY-0328-Write-Up-Sprint-Day-03.md` | Write-up: Chained attack analysis |
+| 329 | `05-BugBountyOps-02/DAY-0329-Write-Up-Sprint-Day-04.md` | Write-up: Report writing practice |
+| 330 | `05-BugBountyOps-02/DAY-0330-Write-Up-Sprint-Day-05.md` | Write-up: CTF sharpening block retrospective |
 
 ---
 
-#### 05-BugBountyOps-03 — Real Programme Submissions (Days 331–360)
+#### 05-BugBountyOps-03 — Real Programme Submissions and Year-1 Gate (Days 331–365)
 
 **Lab:** Submit at least 3 real vulnerability reports; target at least 1 acceptance
 
 | Day | File | Topic |
 |---|---|---|
-| 331–340 | `05-BugBountyOps-03/DAY-XXXX-First-Programme-Sprint.md` | Dedicated 10-day sprint on a chosen programme |
-| 341–350 | `05-BugBountyOps-03/DAY-XXXX-Second-Programme-Sprint.md` | Switch programme; apply all recon + exploit learnings |
-| 351–355 | `05-BugBountyOps-03/DAY-XXXX-Report-Review-and-Resubmit.md` | Review triage feedback; iterate on reports |
-| 356–360 | `05-BugBountyOps-03/DAY-XXXX-Year-1-Review-and-Retrospective.md` | What worked; gap analysis; Year 2 readiness check |
-
----
-
-#### Year 1 Gate (Days 361–365)
-
-| Day | File | Topic |
-|---|---|---|
-| 361–364 | `05-BugBountyOps-03/DAY-XXXX-Gate-Preparation.md` | Prepare gate evidence: reports, write-ups, lab demos |
-| 365 | `05-BugBountyOps-03/DAY-0365-Bug-Bounty-Hunter-Gate.md` | **GATE: Bug Bounty Hunter** — accepted report required |
+| 331 | `05-BugBountyOps-03/DAY-0331-First-Programme-Sprint-Day-01.md` | Programme setup and initial recon |
+| 332 | `05-BugBountyOps-03/DAY-0332-First-Programme-Sprint-Day-02.md` | Authentication and access control testing |
+| 333 | `05-BugBountyOps-03/DAY-0333-First-Programme-Sprint-Day-03.md` | Injection and API testing |
+| 334 | `05-BugBountyOps-03/DAY-0334-First-Programme-Sprint-Day-04.md` | XSS, CSRF, and client-side testing |
+| 335 | `05-BugBountyOps-03/DAY-0335-First-Programme-Sprint-Day-05.md` | Mid-sprint review and pivot |
+| 336 | `05-BugBountyOps-03/DAY-0336-First-Programme-Sprint-Day-06.md` | File upload and business logic |
+| 337 | `05-BugBountyOps-03/DAY-0337-First-Programme-Sprint-Day-07.md` | Report writing and first submissions |
+| 338 | `05-BugBountyOps-03/DAY-0338-First-Programme-Sprint-Day-08.md` | Deep recon and third-party integrations |
+| 339 | `05-BugBountyOps-03/DAY-0339-First-Programme-Sprint-Day-09.md` | Chaining and impact escalation |
+| 340 | `05-BugBountyOps-03/DAY-0340-First-Programme-Sprint-Day-10.md` | Sprint close and retrospective |
+| 341 | `05-BugBountyOps-03/DAY-0341-Second-Programme-Sprint-Day-01.md` | New programme setup and recon |
+| 342 | `05-BugBountyOps-03/DAY-0342-Second-Programme-Sprint-Day-02.md` | Priority surface testing |
+| 343 | `05-BugBountyOps-03/DAY-0343-Second-Programme-Sprint-Day-03.md` | API and authentication deep test |
+| 344 | `05-BugBountyOps-03/DAY-0344-Second-Programme-Sprint-Day-04.md` | Cloud and infrastructure testing |
+| 345 | `05-BugBountyOps-03/DAY-0345-Second-Programme-Sprint-Day-05.md` | Mid-sprint report sprint |
+| 346 | `05-BugBountyOps-03/DAY-0346-Second-Programme-Sprint-Day-06.md` | Unexplored features and mobile testing |
+| 347 | `05-BugBountyOps-03/DAY-0347-Second-Programme-Sprint-Day-07.md` | Nuclei custom templates and pipeline run |
+| 348 | `05-BugBountyOps-03/DAY-0348-Second-Programme-Sprint-Day-08.md` | Chaining and final submissions |
+| 349 | `05-BugBountyOps-03/DAY-0349-Second-Programme-Sprint-Day-09.md` | Community engagement and programme research |
+| 350 | `05-BugBountyOps-03/DAY-0350-Second-Programme-Sprint-Day-10.md` | Sprint close and dual-programme retrospective |
+| 351 | `05-BugBountyOps-03/DAY-0351-Report-Review-Resubmit-Day-01.md` | Triage response analysis |
+| 352 | `05-BugBountyOps-03/DAY-0352-Report-Review-Resubmit-Day-02.md` | Rebuttals and additional evidence |
+| 353 | `05-BugBountyOps-03/DAY-0353-Report-Review-Resubmit-Day-03.md` | Unresponsive programmes and escalation |
+| 354 | `05-BugBountyOps-03/DAY-0354-Report-Review-Resubmit-Day-04.md` | Closing reports and documentation |
+| 355 | `05-BugBountyOps-03/DAY-0355-Report-Review-Resubmit-Day-05.md` | Submission phase close and gate eligibility check |
+| 356 | `05-BugBountyOps-03/DAY-0356-Year-1-Review-Day-01.md` | Foundation and offensive skill recall |
+| 357 | `05-BugBountyOps-03/DAY-0357-Year-1-Review-Day-02.md` | Defensive translation |
+| 358 | `05-BugBountyOps-03/DAY-0358-Year-1-Review-Day-03.md` | Full-year retrospective |
+| 359 | `05-BugBountyOps-03/DAY-0359-Year-1-Review-Day-04.md` | Gap closure sprint |
+| 360 | `05-BugBountyOps-03/DAY-0360-Year-1-Review-Day-05.md` | Gate simulation — full dry run |
+| 361 | `05-BugBountyOps-03/DAY-0361-Gate-Preparation-Day-01.md` | Concept mastery review |
+| 362 | `05-BugBountyOps-03/DAY-0362-Gate-Preparation-Day-02.md` | Live target speed run |
+| 363 | `05-BugBountyOps-03/DAY-0363-Gate-Preparation-Day-03.md` | Report writing and defensive mastery |
+| 364 | `05-BugBountyOps-03/DAY-0364-Gate-Preparation-Day-04.md` | Final rest and logistics |
+| 365 | `05-BugBountyOps-03/DAY-0365-Bug-Bounty-Hunter-Gate.md` | **GATE: Bug Bounty Hunter** — Year 1 capstone |
 
 ---
 
@@ -595,47 +650,96 @@ cryptographic attacks, malware analysis, and the zero-day mindset.
 | 378 | `06-BinaryExploit-01/DAY-0378-Format-String-Lab.md` | Lab: exploit format string to overwrite a GOT entry |
 | 379 | `06-BinaryExploit-01/DAY-0379-pwntools-Mastery.md` | pwntools API, tubes, cyclic, shellcraft, ROP module |
 | 380 | `06-BinaryExploit-01/DAY-0380-pwntools-Lab.md` | Lab: automate all previous stack exploits with pwntools |
-| 381–390 | `06-BinaryExploit-01/DAY-XXXX-Stack-Practice-Labs.md` | Practice: pwn.college stack challenges |
-| 391 | `06-BinaryExploit-02/DAY-0391-Heap-Internals.md` | glibc malloc/free, chunk structure, bins, tcache |
-| 392 | `06-BinaryExploit-02/DAY-0392-Heap-Overflow.md` | Heap overflow into next chunk, tcache poisoning |
-| 393 | `06-BinaryExploit-02/DAY-0393-Use-After-Free.md` | UAF fundamentals, dangling pointer exploitation |
-| 394 | `06-BinaryExploit-02/DAY-0394-UAF-Lab.md` | Lab: exploit a heap UAF CTF binary |
-| 395 | `06-BinaryExploit-02/DAY-0395-Double-Free-and-Tcache-Poisoning.md` | Double free, tcache dup, arbitrary write primitive |
-| 396 | `06-BinaryExploit-02/DAY-0396-Heap-Exploitation-Lab.md` | Lab: tcache poisoning to arbitrary write → shell |
-| 397–410 | `06-BinaryExploit-02/DAY-XXXX-Heap-Practice-Labs.md` | Practice: pwn.college heap + CTF heap challenges |
-| 411–420 | `06-BinaryExploit-02/DAY-XXXX-Kernel-Exploitation-Intro.md` | Kernel bug classes, LPE via kernel, ret2usr, SMEP/SMAP |
-| 421–429 | `06-BinaryExploit-02/DAY-XXXX-Binary-Exploit-CTF-Sprint.md` | CTF binary exploitation sprint |
-| 430 | `06-BinaryExploit-02/DAY-0430-Binary-Exploit-Competency-Gate.md` | **GATE: Binary Exploitation Ready** |
+| 381 | `06-BinaryExploit-01/DAY-0381-Stack-Practice-Day-01.md` | Practice: ret2win 32-bit, offset finding, first flag |
+| 382 | `06-BinaryExploit-01/DAY-0382-Stack-Practice-Day-02.md` | Practice: shellcode injection, NX disabled, NOP sled |
+| 383 | `06-BinaryExploit-01/DAY-0383-Stack-Practice-Day-03.md` | Practice: ret2libc 32-bit, NX enabled, no gadgets needed |
+| 384 | `06-BinaryExploit-01/DAY-0384-Stack-Practice-Day-04.md` | Practice: 64-bit ROP, pop rdi; ret, system() |
+| 385 | `06-BinaryExploit-01/DAY-0385-Stack-Practice-Day-05.md` | Practice: ASLR bypass, GOT leak, two-stage exploit |
+| 386 | `06-BinaryExploit-01/DAY-0386-Stack-Practice-Day-06.md` | Practice: format string GOT overwrite, loop binary |
+| 387 | `06-BinaryExploit-01/DAY-0387-Stack-Practice-Day-07.md` | Practice: format string leak + stack overflow chain |
+| 388 | `06-BinaryExploit-01/DAY-0388-Stack-Practice-Day-08.md` | Practice: execve syscall ROP, static binary, write /bin/sh |
+| 389 | `06-BinaryExploit-01/DAY-0389-Stack-Practice-Day-09.md` | Practice: unknown binary CTF-style, full triage protocol |
+| 390 | `06-BinaryExploit-01/DAY-0390-Stack-Practice-Day-10-Competency-Check.md` | **GATE: Stack Exploitation** — oral + live binary + debrief |
+| 391 | `06-BinaryExploit-02/DAY-0391-Heap-Exploitation-Introduction.md` | glibc malloc/free, chunk layout, tcache, bins, pwndbg heap cmds |
+| 392 | `06-BinaryExploit-02/DAY-0392-Use-After-Free.md` | CWE-416, dangling pointer, UAF function-pointer overwrite |
+| 393 | `06-BinaryExploit-02/DAY-0393-Heap-Buffer-Overflow.md` | Chunk adjacency, off-by-one null byte, PREV_INUSE manipulation |
+| 394 | `06-BinaryExploit-02/DAY-0394-Double-Free-and-Tcache-Poisoning.md` | CWE-415, tcache cycle, key bypass (glibc 2.29+), fd poisoning |
+| 395 | `06-BinaryExploit-02/DAY-0395-Heap-Lab-UAF-Exploit.md` | Lab: UAF note manager — function pointer overwrite → shell |
+| 396 | `06-BinaryExploit-02/DAY-0396-Heap-Lab-Tcache-Poisoning.md` | Lab: double-free → tcache poison → __free_hook → shell |
+| 397 | `06-BinaryExploit-02/DAY-0397-Heap-Practice-Day-01.md` | Practice: unsorted bin leak, main_arena+96, libc base |
+| 398 | `06-BinaryExploit-02/DAY-0398-Heap-Practice-Day-02.md` | Practice: tcache to __free_hook from scratch |
+| 399 | `06-BinaryExploit-02/DAY-0399-Heap-Practice-Day-03.md` | Practice: heap overflow → chunk overlap → fn pointer |
+| 400 | `06-BinaryExploit-02/DAY-0400-Heap-Practice-Day-04.md` | Practice: full heap chain milestone — Day 400 reflection |
+| 401 | `06-BinaryExploit-02/DAY-0401-Heap-Practice-Day-05.md` | Practice: CTF heap challenge 1 — triage + solve |
+| 402 | `06-BinaryExploit-02/DAY-0402-Heap-Practice-Day-06.md` | Practice: off-by-one null byte, House of Einherjar concept |
+| 403 | `06-BinaryExploit-02/DAY-0403-Heap-Practice-Day-07.md` | Practice: fastbin attack, glibc < 2.26, fake chunk size 0x7f |
+| 404 | `06-BinaryExploit-02/DAY-0404-Heap-Practice-Day-08.md` | Practice: heap spray reliability, 1-byte partial overwrite |
+| 405 | `06-BinaryExploit-02/DAY-0405-Heap-Practice-Day-09.md` | Practice: CTF heap challenge 2 — harder, 4-hour limit |
+| 406 | `06-BinaryExploit-02/DAY-0406-Heap-Practice-Day-10.md` | Modern glibc FSOP intro, _IO_FILE vtable, glibc 2.34+ paths |
+| 407 | `06-BinaryExploit-02/DAY-0407-Heap-Practice-Day-11.md` | C++ vtable hijacking, virtual dispatch, fake vtable in BSS |
+| 408 | `06-BinaryExploit-02/DAY-0408-Heap-Practice-Day-12.md` | Heap exploit write-up — professional format with heap diagrams |
+| 409 | `06-BinaryExploit-02/DAY-0409-Heap-Practice-Day-13.md` | Heap speed run — 3 challenges × 1 hour, bottleneck analysis |
+| 410 | `06-BinaryExploit-02/DAY-0410-Heap-Practice-Day-14-Competency-Check.md` | **GATE: Heap Exploitation** — oral + live binary + debrief |
+| 411 | `06-BinaryExploit-02/DAY-0411-Kernel-Exploitation-Introduction.md` | Ring model, QEMU lab setup, SMEP/SMAP/KASLR, LPE goal |
+| 412 | `06-BinaryExploit-02/DAY-0412-Kernel-Practice-Day-01.md` | Kernel practice 01 — vulnerable LKM, ioctl, QEMU gdbstub |
+| 413 | `06-BinaryExploit-02/DAY-0413-Kernel-Practice-Day-02.md` | Kernel practice 02 — ret2usr, save_state(), commit_creds |
+| 414 | `06-BinaryExploit-02/DAY-0414-Kernel-Practice-Day-03.md` | Kernel practice 03 — kernel ROP chain, SMEP bypass |
+| 415 | `06-BinaryExploit-02/DAY-0415-Kernel-Practice-Day-04.md` | Kernel practice 04 — SLUB allocator, tty_struct heap spray |
+| 416 | `06-BinaryExploit-02/DAY-0416-Kernel-Practice-Day-05.md` | Kernel practice 05 — KASLR defeat, /proc/kallsyms leak |
+| 417 | `06-BinaryExploit-02/DAY-0417-Kernel-Practice-Day-06.md` | Kernel practice 06 — CTF kernel challenge, unknown module |
+| 418 | `06-BinaryExploit-02/DAY-0418-Kernel-Practice-Day-07.md` | Kernel practice 07 — exploit write-up, iretq frame detail |
+| 419 | `06-BinaryExploit-02/DAY-0419-Kernel-Practice-Day-08.md` | Kernel practice 08 — CVE study, patch diff to exploit chain |
+| 420 | `06-BinaryExploit-02/DAY-0420-Kernel-Practice-Day-09-Competency-Check.md` | **GATE: Kernel Exploitation** — oral + live module + debrief |
+| 421 | `06-BinaryExploit-02/DAY-0421-BinaryExploit-CTF-Sprint-Day-01.md` | CTF Sprint 01 — triage protocol, category calibration |
+| 422 | `06-BinaryExploit-02/DAY-0422-BinaryExploit-CTF-Sprint-Day-02.md` | CTF Sprint 02 — stack category speed, one-gadget |
+| 423 | `06-BinaryExploit-02/DAY-0423-BinaryExploit-CTF-Sprint-Day-03.md` | CTF Sprint 03 — format string speed workflow |
+| 424 | `06-BinaryExploit-02/DAY-0424-BinaryExploit-CTF-Sprint-Day-04.md` | CTF Sprint 04 — heap category triage, UAF + tcache |
+| 425 | `06-BinaryExploit-02/DAY-0425-BinaryExploit-CTF-Sprint-Day-05.md` | CTF Sprint 05 — mixed category 4-hour mini-CTF |
+| 426 | `06-BinaryExploit-02/DAY-0426-BinaryExploit-CTF-Sprint-Day-06.md` | CTF Sprint 06 — intermediate heap, glibc 2.34+, environ leak |
+| 427 | `06-BinaryExploit-02/DAY-0427-BinaryExploit-CTF-Sprint-Day-07.md` | CTF Sprint 07 — hard challenge day, map-first rule |
+| 428 | `06-BinaryExploit-02/DAY-0428-BinaryExploit-CTF-Sprint-Day-08.md` | CTF Sprint 08 — write-up + personal pattern reference card |
+| 429 | `06-BinaryExploit-02/DAY-0429-BinaryExploit-CTF-Sprint-Day-09.md` | CTF Sprint 09 — gate warm-up, final calibration, oral prep |
+| 430 | `06-BinaryExploit-02/DAY-0430-Binary-Exploitation-Gate.md` | **GATE: Binary Exploitation Ready** — full module capstone |
 
 ---
 
 ### 07-ReverseEngineering — Reverse Engineering (Days 431–490)
 
-**Lab:** Reverse a real crackme; analyse a packed malware sample
+**Lab:** Reverse a real crackme; manually unpack a packed binary; reproduce a CVE
+from a patch diff; analyse a malware sample
+
+#### 07-RE-01 — RE Fundamentals (Days 431–450)
 
 | Day | File | Topic |
 |---|---|---|
-| 431 | `07-RE-01/DAY-0431-RE-Mindset-and-Toolchain.md` | Static vs dynamic, Ghidra vs IDA, workflow |
-| 432 | `07-RE-01/DAY-0432-Ghidra-Fundamentals.md` | Decompiler, function analysis, rename, cross-references |
-| 433 | `07-RE-01/DAY-0433-Ghidra-Lab-Crackme-1.md` | Lab: reverse a simple crackme — find the password |
-| 434 | `07-RE-01/DAY-0434-x64-Assembly-for-Reverse-Engineers.md` | Reading disassembly, recognising patterns, structs, loops |
-| 435 | `07-RE-01/DAY-0435-Ghidra-Lab-Crackme-2.md` | Lab: multi-stage crackme with anti-debug |
-| 436 | `07-RE-01/DAY-0436-Dynamic-Analysis-with-GDB-and-PWNDBG.md` | Breakpoints, watchpoints, tracing execution |
-| 437 | `07-RE-01/DAY-0437-Frida-for-Reverse-Engineering.md` | Frida JS API, hooking functions, tracing returns |
-| 438 | `07-RE-01/DAY-0438-Windows-PE-Format.md` | PE headers, sections, imports, exports, TLS callbacks |
-| 439 | `07-RE-01/DAY-0439-ELF-Format-Deep-Dive.md` | ELF header, sections, PLT/GOT, dynamic linking |
-| 440 | `07-RE-01/DAY-0440-Identifying-Algorithms-in-Binaries.md` | Crypto constants, compression signatures, protocol parsers |
-| 441–450 | `07-RE-01/DAY-XXXX-RE-Practice-Labs.md` | Practice: reverse.engineering crackmes, flare-on |
-| 451 | `07-RE-02/DAY-0451-Packers-and-Obfuscation.md` | UPX, custom packers, section entropy, unpacking stubs |
-| 452 | `07-RE-02/DAY-0452-Unpacking-Lab.md` | Lab: manually unpack a UPX-compressed binary |
-| 453 | `07-RE-02/DAY-0453-Anti-Debugging-Techniques.md` | IsDebuggerPresent, timing checks, NtQueryInfo bypass |
-| 454 | `07-RE-02/DAY-0454-Obfuscation-and-Deobfuscation.md` | Control flow flattening, string encryption, VM protection |
-| 455 | `07-RE-02/DAY-0455-Deobfuscation-Lab.md` | Lab: deobfuscate a script-based payload |
-| 456 | `07-RE-02/DAY-0456-Patch-Diffing.md` | BinDiff, diaphora — finding bugs from security patches |
-| 457 | `07-RE-02/DAY-0457-CVE-Reproduction-from-Patch-Diff.md` | Lab: reproduce a CVE starting from the patch alone |
-| 458–480 | `07-RE-02/DAY-XXXX-RE-Advanced-Practice.md` | Flare-on + advanced CTF reversing challenges |
-| 481–489 | `07-RE-02/DAY-XXXX-RE-CTF-Sprint.md` | CTF reversing sprint |
-| 490 | `07-RE-02/DAY-0490-RE-Competency-Gate.md` | **GATE: Reverse Engineering Ready** |
+| 431 | `07-RE-01/DAY-0431-RE-Mindset-and-Toolchain.md` | Static vs dynamic, Ghidra vs IDA, five-minute triage protocol |
+| 432 | `07-RE-01/DAY-0432-Ghidra-Fundamentals.md` | Decompiler, function analysis, rename, cross-references, XREF |
+| 433 | `07-RE-01/DAY-0433-Ghidra-Lab-Crackme-1.md` | Lab: reverse a stripped crackme statically — find the password |
+| 434 | `07-RE-01/DAY-0434-x64-Assembly-for-Reverse-Engineers.md` | Loops, if/else, switch, struct access, compiler idioms |
+| 435 | `07-RE-01/DAY-0435-Ghidra-Lab-Crackme-2.md` | Lab: multi-stage crackme with ptrace anti-debug and XOR+additive key |
+| 436 | `07-RE-01/DAY-0436-Dynamic-Analysis-with-GDB-and-PWNDBG.md` | Breakpoints on addresses, watchpoints, ltrace, binary patching |
+| 437 | `07-RE-01/DAY-0437-Frida-for-Reverse-Engineering.md` | Frida JS API, hooking by name/address, Stalker, retval.replace |
+| 438 | `07-RE-01/DAY-0438-Windows-PE-Format.md` | PE headers, IAT, export table, TLS callbacks, pefile parser |
+| 439 | `07-RE-01/DAY-0439-ELF-Format-Deep-Dive.md` | ELF sections, PLT/GOT lazy binding, .init_array, symbol tables |
+| 440 | `07-RE-01/DAY-0440-Identifying-Algorithms-in-Binaries.md` | Crypto constants, CAPA, findcrypt, compression signatures, YARA |
+| 441–450 | `07-RE-01/DAY-0441-RE-Practice-Labs.md` | Practice: crackmes, Flare-On, algorithm recognition, Frida sprint, |
+| | | Windows PE RE, write-up day, self-assessment competency check |
+
+#### 07-RE-02 — Advanced RE (Days 451–490)
+
+| Day | File | Topic |
+|---|---|---|
+| 451 | `07-RE-02/DAY-0451-Packers-and-Obfuscation.md` | UPX, custom packers, section entropy, missing imports, die/PEiD |
+| 452 | `07-RE-02/DAY-0452-Unpacking-Lab.md` | Lab: manual OEP detection with hardware breakpoint; process dump |
+| 453 | `07-RE-02/DAY-0453-Anti-Debugging-Techniques.md` | ptrace, /proc/status, rdtsc, IsDebuggerPresent, NtQueryInfo bypass |
+| 454 | `07-RE-02/DAY-0454-Obfuscation-and-Deobfuscation.md` | String encryption, CFF, opaque predicates, VM protection |
+| 455 | `07-RE-02/DAY-0455-Deobfuscation-Lab.md` | Lab: deobfuscate a multi-layer JS + PowerShell + Python dropper |
+| 456 | `07-RE-02/DAY-0456-Patch-Diffing.md` | BinDiff, Diaphora, interpreting changed functions, 1-day research |
+| 457 | `07-RE-02/DAY-0457-CVE-Reproduction-from-Patch-Diff.md` | Lab: PoC crash from patch diff — full pipeline |
+| 458–480 | `07-RE-02/DAY-0458-RE-Advanced-Practice.md` | Flare-On challenges, malware samples (dropper/loader/C2/ransomware), |
+| | | patch-diff CVE sprint (5 CVEs), gate dry run, milestone review |
+| 481–489 | `07-RE-02/DAY-0481-RE-CTF-Sprint.md` | CTF sprint: speed triage, algorithm sprint, live CTF, unknown binary |
+| 490 | `07-RE-02/DAY-0490-RE-Competency-Gate.md` | **GATE: Reverse Engineering Ready** — unknown crackme + packed binary |
 
 ---
 
@@ -665,7 +769,27 @@ cryptographic attacks, malware analysis, and the zero-day mindset.
 | 508 | `08-RedTeam-03/DAY-0508-Purple-Team-Concepts.md` | Red + blue collaboration, ATT&CK emulation plans |
 | 509 | `08-RedTeam-03/DAY-0509-Atomic-Red-Team-Lab.md` | Lab: run Atomic tests, detect with Sigma rules |
 | 510 | `08-RedTeam-03/DAY-0510-Red-Team-Reporting.md` | Narrative report, executive summary, remediation priority |
-| 511–550 | `08-RedTeam-03/DAY-XXXX-Red-Team-Practice.md` | AD practice labs, Offshore-style environments |
+| 511 | `08-RedTeam-03/DAY-0511-ADCS-Attack-Surface.md` | ADCS architecture, ESC1–ESC8 taxonomy, Certipy find |
+| 512 | `08-RedTeam-03/DAY-0512-ADCS-ESC1-Lab.md` | Lab: ESC1 — SAN injection → DA cert → UnPAC-the-Hash |
+| 513 | `08-RedTeam-03/DAY-0513-ADCS-ESC8-PetitPotam-Lab.md` | Lab: ESC8 — PetitPotam coercion → relay → DC cert → DCSync |
+| 514 | `08-RedTeam-03/DAY-0514-RBCD-Attack.md` | RBCD — GenericWrite → msDS-AllowedToActOnBehalfOf → S4U |
+| 515 | `08-RedTeam-03/DAY-0515-ASREPRoasting-Password-Spraying.md` | AS-REP roasting, password spraying, lockout calibration |
+| 516 | `08-RedTeam-03/DAY-0516-SID-History-Trust-Attacks.md` | SID History injection, child-to-parent, inter-forest trusts |
+| 517 | `08-RedTeam-03/DAY-0517-AdminSDHolder-DCShadow.md` | AdminSDHolder backdoor, SDProp, DCShadow rogue DC push |
+| 518 | `08-RedTeam-03/DAY-0518-LOLAD-Living-Off-The-Land.md` | LOLAD — native Windows tools for full AD kill-chain |
+| 519 | `08-RedTeam-03/DAY-0519-Advanced-Evasion-AV-Bypass.md` | Indirect syscalls, BYOVD, sleep obfuscation, AMSI bypass |
+| 520 | `08-RedTeam-03/DAY-0520-Practice-Engagement-Checkpoint.md` | Checkpoint — Days 511–519 timed lab + gap analysis |
+| 521 | `08-RedTeam-03/DAY-0521-C2-Infrastructure-Design.md` | Redirectors, domain fronting via Cloudflare Workers, malleable profiles |
+| 522 | `08-RedTeam-03/DAY-0522-C2-OPSEC.md` | Burn vectors, compartmentalisation, VPS/domain registration OPSEC |
+| 523 | `08-RedTeam-03/DAY-0523-AWS-Red-Team-Attack-Surface.md` | AWS IAM model, IMDS, enumerate-iam, IAM privilege escalation paths |
+| 524 | `08-RedTeam-03/DAY-0524-AWS-Exploitation-Lab.md` | Lab: SSRF → IMDS → CreatePolicyVersion → backdoor IAM user |
+| 525 | `08-RedTeam-03/DAY-0525-Azure-Red-Teaming.md` | Azure AD, Service Principals, Managed Identities, roadrecon |
+| 526 | `08-RedTeam-03/DAY-0526-Azure-Attack-Lab.md` | PRT theft, Conditional Access bypass, SP credential backdoor |
+| 527 | `08-RedTeam-03/DAY-0527-Kubernetes-Security.md` | K8s RBAC abuse, SA token, pods:create escape, etcd secrets |
+| 528 | `08-RedTeam-03/DAY-0528-Container-Escape-Lab.md` | Lab: privileged escape, Docker socket, hostPath, cgroup release_agent |
+| 529 | `08-RedTeam-03/DAY-0529-Cross-Environment-Attack-Paths.md` | Golden SAML, AAD Connect MSOL, AZUREADSSOACC$ Seamless SSO |
+| 530 | `08-RedTeam-03/DAY-0530-Practice-Checkpoint-Cloud-Container.md` | Checkpoint — Days 521–529 timed lab + gap analysis |
+| 531–550 | `08-RedTeam-03/DAY-XXXX-Red-Team-Practice.md` | Advanced persistence, red team practice, Offshore-style environments |
 | 551–559 | `08-RedTeam-03/DAY-XXXX-Red-Team-CTF-Sprint.md` | Red team CTF sprint |
 | 560 | `08-RedTeam-03/DAY-0560-Red-Team-Competency-Check.md` | Self-assessment + engagement report |
 
