@@ -789,7 +789,26 @@ from a patch diff; analyse a malware sample
 | 528 | `08-RedTeam-03/DAY-0528-Container-Escape-Lab.md` | Lab: privileged escape, Docker socket, hostPath, cgroup release_agent |
 | 529 | `08-RedTeam-03/DAY-0529-Cross-Environment-Attack-Paths.md` | Golden SAML, AAD Connect MSOL, AZUREADSSOACC$ Seamless SSO |
 | 530 | `08-RedTeam-03/DAY-0530-Practice-Checkpoint-Cloud-Container.md` | Checkpoint — Days 521–529 timed lab + gap analysis |
-| 531–550 | `08-RedTeam-03/DAY-XXXX-Red-Team-Practice.md` | Advanced persistence, red team practice, Offshore-style environments |
+| 531 | `08-RedTeam-03/DAY-0531-Advanced-Persistence-WMI-Subscriptions.md` | WMI __EventFilter, CommandLineEventConsumer, FilterToConsumerBinding, detection |
+| 532 | `08-RedTeam-03/DAY-0532-COM-Hijacking-and-DLL-Hijacking.md` | COM resolution order, HKCU override, DLL search order, sideloading (T1546.015) |
+| 533 | `08-RedTeam-03/DAY-0533-Advanced-Persistence-Lab.md` | Lab: multi-technique persistence chain — WMI + COM + task + Run key |
+| 534 | `08-RedTeam-03/DAY-0534-Offshore-Environment-Methodology.md` | Multi-forest topology, pivot chain model, Ligolo-ng, Offshore kill chain |
+| 535 | `08-RedTeam-03/DAY-0535-Offshore-Lab-Episode-1-External-Foothold.md` | Lab Ep1: external recon → DMZ foothold → PrivEsc → C2 beacon → pivot |
+| 536 | `08-RedTeam-03/DAY-0536-Offshore-Lab-Episode-2-Internal-Pivoting.md` | Lab Ep2: internal recon → Responder → SMB relay → Kerberoasting → BloodHound |
+| 537 | `08-RedTeam-03/DAY-0537-Offshore-Lab-Episode-3-Domain-Compromise.md` | Lab Ep3: BloodHound path → lateral movement → ADCS → DCSync → Golden Ticket |
+| 538 | `08-RedTeam-03/DAY-0538-Offshore-Lab-Episode-4-Multi-Forest-Trust.md` | Lab Ep4: forest trust enum → ExtraSids → subsidiary DA → cleanup |
+| 539 | `08-RedTeam-03/DAY-0539-Offshore-Practice-Day-1-Speed-Engagement.md` | Timed solo engagement — external to DA under exam conditions |
+| 540 | `08-RedTeam-03/DAY-0540-Offshore-Practice-Day-2-Checkpoint.md` | Gap drills, command recall, live demo, detection writing, methodology card |
+| 541 | `08-RedTeam-03/DAY-0541-Advanced-EDR-Evasion-Lateral-Movement.md` | EDR evasion — kernel hooks, ETW, AMSI bypass, PPID spoofing, process injection |
+| 542 | `08-RedTeam-03/DAY-0542-Custom-Payload-Development-Process-Injection.md` | Custom payload development — XOR runners, staged loaders, Go implants, sleep obfuscation |
+| 543 | `08-RedTeam-03/DAY-0543-Delegation-Attacks-Deep-Dive.md` | Delegation attacks — unconstrained + printer bug, constrained S4U2Proxy, RBCD full chain |
+| 544 | `08-RedTeam-03/DAY-0544-Shadow-Credentials-PKINIT.md` | Shadow credentials — msDS-KeyCredentialLink, pyWhisker, PKINIT, UnPAC-the-Hash |
+| 545 | `08-RedTeam-03/DAY-0545-ADCS-Advanced-ESC4-ESC6.md` | ADCS advanced — ESC4 writable template, ESC6 CA flag, ESC7→ESC6 chain, ESC9/ESC10 mapping |
+| 546 | `08-RedTeam-03/DAY-0546-Advanced-LOLAD-LOLBAS.md` | Advanced LOLAD/LOLBAS — DCOM MMC20, COM scheduled tasks, comsvcs MiniDump, certutil/msiexec |
+| 547 | `08-RedTeam-03/DAY-0547-Three-Zone-Pivoting-Deep-Network.md` | Three-zone pivoting — Ligolo-ng listener relay chain, Chisel, DNS across proxies, conflict routing |
+| 548 | `08-RedTeam-03/DAY-0548-Full-Engagement-Simulation-Alternate.md` | Full engagement simulation — VPN/OWA spray initial access, alternate DA path, Azure pivot |
+| 549 | `08-RedTeam-03/DAY-0549-Red-Team-Report-Writing-Sprint.md` | Red team report writing — executive summary, findings format, CVSS, remediation matrix, ATT&CK |
+| 550 | `08-RedTeam-03/DAY-0550-Milestone-550-Red-Team-Retrospective.md` | Milestone 550 — technique confidence matrix, gap analysis, methodology card update, CTF prep |
 | 551–559 | `08-RedTeam-03/DAY-XXXX-Red-Team-CTF-Sprint.md` | Red team CTF sprint |
 | 560 | `08-RedTeam-03/DAY-0560-Red-Team-Competency-Check.md` | Self-assessment + engagement report |
 
