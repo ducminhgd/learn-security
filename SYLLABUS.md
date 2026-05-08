@@ -809,8 +809,16 @@ from a patch diff; analyse a malware sample
 | 548 | `08-RedTeam-03/DAY-0548-Full-Engagement-Simulation-Alternate.md` | Full engagement simulation — VPN/OWA spray initial access, alternate DA path, Azure pivot |
 | 549 | `08-RedTeam-03/DAY-0549-Red-Team-Report-Writing-Sprint.md` | Red team report writing — executive summary, findings format, CVSS, remediation matrix, ATT&CK |
 | 550 | `08-RedTeam-03/DAY-0550-Milestone-550-Red-Team-Retrospective.md` | Milestone 550 — technique confidence matrix, gap analysis, methodology card update, CTF prep |
-| 551–559 | `08-RedTeam-03/DAY-XXXX-Red-Team-CTF-Sprint.md` | Red team CTF sprint |
-| 560 | `08-RedTeam-03/DAY-0560-Red-Team-Competency-Check.md` | Self-assessment + engagement report |
+| 551 | `08-RedTeam-03/DAY-0551-Red-Team-CTF-Sprint-Day-1.md` | CTF Sprint 01 — multi-forest AD engagement |
+| 552 | `08-RedTeam-03/DAY-0552-Red-Team-CTF-Sprint-Day-2.md` | CTF Sprint 02 — Azure lateral movement chain |
+| 553 | `08-RedTeam-03/DAY-0553-Red-Team-CTF-Sprint-Day-3.md` | CTF Sprint 03 — container escape to cloud |
+| 554 | `08-RedTeam-03/DAY-0554-Red-Team-CTF-Sprint-Day-4.md` | CTF Sprint 04 — credential access and lateral movement |
+| 555 | `08-RedTeam-03/DAY-0555-Red-Team-CTF-Sprint-Day-5.md` | CTF Sprint 05 — persistence and evasion under detection |
+| 556 | `08-RedTeam-03/DAY-0556-Red-Team-CTF-Sprint-Day-6.md` | CTF Sprint 06 — cloud attack chains (SSRF → IMDS → IAM escalation) |
+| 557 | `08-RedTeam-03/DAY-0557-Red-Team-CTF-Sprint-Day-7.md` | CTF Sprint 07 — AD misconfiguration chain (GenericWrite → DCSync) |
+| 558 | `08-RedTeam-03/DAY-0558-Red-Team-CTF-Sprint-Day-8.md` | CTF Sprint 08 — evasion and detection race (AMSI + ETW + MSBuild) |
+| 559 | `08-RedTeam-03/DAY-0559-Red-Team-CTF-Sprint-Day-9.md` | CTF Sprint 09 — full kill chain under alert threshold |
+| 560 | `08-RedTeam-03/DAY-0560-Red-Team-Competency-Check.md` | Competency check — confidence matrix + timed lab + report review |
 
 ---
 
@@ -825,14 +833,51 @@ from a patch diff; analyse a malware sample
 | 563 | `09-Crypto-01/DAY-0563-Timing-Attacks.md` | Timing side-channel, constant-time comparisons, Python demo |
 | 564 | `09-Crypto-01/DAY-0564-Length-Extension-Attack.md` | SHA-2 construction, extension attack, forging signed requests |
 | 565 | `09-Crypto-01/DAY-0565-Length-Extension-Lab.md` | Lab: forge an HMAC via length extension |
-| 566 | `09-Crypto-01/DAY-0566-ECB-Cut-and-Paste.md` | Block boundary manipulation, block oracle attacks |
-| 567 | `09-Crypto-01/DAY-0567-RSA-Attack-Lab.md` | Lab: small public exponent, common modulus, broadcast attack |
-| 568 | `09-Crypto-01/DAY-0568-Diffie-Hellman-Attacks.md` | Small subgroup, LOGJAM, invalid curve attacks |
-| 569 | `09-Crypto-01/DAY-0569-ECDSA-Nonce-Reuse.md` | Nonce reuse → private key recovery, PS3 real case |
-| 570 | `09-Crypto-01/DAY-0570-ECDSA-Lab.md` | Lab: recover private key from two sigs with same nonce |
-| 571–590 | `09-Crypto-01/DAY-XXXX-Crypto-CTF-Practice.md` | Cryptopals challenges + crypto CTF sprint |
-| 591–609 | `09-Crypto-02/DAY-XXXX-Advanced-Crypto-Topics.md` | Bleichenbacher, GCM nonce reuse, lattice attacks intro |
-| 610 | `09-Crypto-02/DAY-0610-Crypto-Competency-Check.md` | Self-assessment + lab submission |
+| 566 | `09-Crypto-01/DAY-0566-ECB-Cut-and-Paste.md` | Block boundary manipulation, cut-and-paste role escalation, byte-at-a-time oracle |
+| 567 | `09-Crypto-01/DAY-0567-RSA-Attack-Lab.md` | Small exponent (e=3), Håstad broadcast via CRT, common modulus attack |
+| 568 | `09-Crypto-01/DAY-0568-Diffie-Hellman-Attacks.md` | Small subgroup (Pohlig-Hellman), LOGJAM export-grade downgrade, invalid curve ECDH |
+| 569 | `09-Crypto-01/DAY-0569-ECDSA-Nonce-Reuse.md` | Nonce reuse → private key recovery, PS3 hack, Bitcoin wallet thefts |
+| 570 | `09-Crypto-01/DAY-0570-ECDSA-Lab.md` | Lab: weak PRNG signing service — detect nonce reuse, recover key, forge signature |
+| 571 | `09-Crypto-01/DAY-0571-Cryptopals-CTF-Day-1.md` | Cryptopals Set 1 — hex/base64, fixed XOR, single-byte XOR, repeating-key XOR, ECB detection |
+| 572 | `09-Crypto-01/DAY-0572-Cryptopals-CTF-Day-2.md` | Cryptopals Set 2 — PKCS#7, CBC mode, ECB byte-at-a-time oracle, cut-and-paste, CBC bitflip |
+| 573 | `09-Crypto-01/DAY-0573-Cryptopals-CTF-Day-3.md` | Cryptopals Set 3 — padding oracle, CTR mode, CTR nonce reuse, MT19937 clone |
+| 574 | `09-Crypto-01/DAY-0574-Cryptopals-CTF-Day-4.md` | Cryptopals Set 4 — CTR splicing, CBC key-as-IV recovery, SHA-1 length extension, HMAC timing |
+| 575 | `09-Crypto-01/DAY-0575-Cryptopals-CTF-Day-5.md` | Cryptopals Set 5 — DH from scratch, parameter injection MITM, malicious g, SRP, RSA |
+| 576 | `09-Crypto-01/DAY-0576-Cryptopals-CTF-Day-6.md` | Cryptopals Set 6 Ch.41-42 — RSA unpadded oracle, Bleichenbacher e=3 sig forgery |
+| 577 | `09-Crypto-01/DAY-0577-Cryptopals-CTF-Day-7.md` | Cryptopals Set 6 Ch.43-44 — DSA key recovery from known nonce, repeated-r nonce reuse |
+| 578 | `09-Crypto-01/DAY-0578-Cryptopals-CTF-Day-8.md` | Cryptopals Set 6 Ch.45-46 — DSA parameter tampering (magic sig), RSA parity oracle |
+| 579 | `09-Crypto-01/DAY-0579-Cryptopals-CTF-Day-9.md` | Cryptopals Set 6 Ch.47-48 — Bleichenbacher PKCS#1 v1.5 padding oracle (simple + full) |
+| 580 | `09-Crypto-01/DAY-0580-Cryptopals-CTF-Day-10.md` | Cryptopals Set 7 Ch.49-50 — CBC-MAC forgery (IV manipulation, length extension) |
+| 581 | `09-Crypto-01/DAY-0581-Cryptopals-CTF-Day-11.md` | Cryptopals Set 7 Ch.51 — CRIME compression oracle, CTR and CBC variants |
+| 582 | `09-Crypto-01/DAY-0582-Cryptopals-CTF-Day-12.md` | Cryptopals Set 7 Ch.52-54 — Joux multicollision, expandable messages, herding attack |
+| 583 | `09-Crypto-01/DAY-0583-Crypto-CTF-Sprint-Day-1.md` | CTF sprint: RSA — Wiener low-d, batch GCD, Coppersmith partial plaintext |
+| 584 | `09-Crypto-01/DAY-0584-Crypto-CTF-Sprint-Day-2.md` | CTF sprint: DH/ECDH/ECDSA — BSGS, Pohlig-Hellman, invalid curve, lattice nonce bias |
+| 585 | `09-Crypto-01/DAY-0585-Crypto-CTF-Sprint-Day-3.md` | CTF sprint: CBC/CTR/GCM — CBC-R, CTR nonce reuse, GCM forbidden attack |
+| 586 | `09-Crypto-02/DAY-0586-Lattice-Basics.md` | Lattice fundamentals: basis, SVP, CVP, Hadamard ratio, geometric intuition |
+| 587 | `09-Crypto-02/DAY-0587-LLL-Algorithm.md` | Gram-Schmidt, Lovász condition, LLL reduction, SageMath `.LLL()` |
+| 588 | `09-Crypto-02/DAY-0588-LLL-Lab.md` | Lab: break Merkle-Hellman knapsack; SVP CTF challenge |
+| 589 | `09-Crypto-02/DAY-0589-Coppersmith-Method.md` | Howgrave-Graham theorem, small roots of polynomials mod N, `small_roots()` |
+| 590 | `09-Crypto-02/DAY-0590-Coppersmith-Lab.md` | Lab: partial RSA plaintext recovery — known high bits, low bits, CTF challenge |
+| 591 | `09-Crypto-02/DAY-0591-Franklin-Reiter-Bivariate.md` | Franklin-Reiter related message attack, short pad, bivariate Coppersmith |
+| 592 | `09-Crypto-02/DAY-0592-RSA-Lattice-Attacks-Stereotyped.md` | Wiener's attack (continued fractions), stereotyped messages, RSA decision tree |
+| 593 | `09-Crypto-02/DAY-0593-Hidden-Number-Problem.md` | HNP formulation, ECDSA nonce bias → CVP/BDD, lattice construction |
+| 594 | `09-Crypto-02/DAY-0594-HNP-Lab.md` | Lab: ECDSA private key recovery from biased nonces, forge signature |
+| 595 | `09-Crypto-02/DAY-0595-MT19937-State-Recovery.md` | MT19937 internals, untemper transform, clone from 624 outputs |
+| 596 | `09-Crypto-02/DAY-0596-PRNG-Attack-Lab.md` | Lab: MT19937 password reset forgery, Java LCG seed recovery, CTF |
+| 597 | `09-Crypto-02/DAY-0597-Differential-Fault-Analysis.md` | DFA theory, Bellcore attack on RSA-CRT, AES round 8 fault model |
+| 598 | `09-Crypto-02/DAY-0598-Cache-Timing-Attacks.md` | Flush+Reload, Prime+Probe, Spectre overview, constant-time programming |
+| 599 | `09-Crypto-02/DAY-0599-LCG-LFSR-Attacks.md` | Unknown LCG modulus via GCD, truncated LCG via lattice, Berlekamp-Massey LFSR |
+| 600 | `09-Crypto-02/DAY-0600-Milestone-600.md` | Milestone 600 — retrospective, gap analysis, forward plan for Days 601–730 |
+| 601 | `09-Crypto-02/DAY-0601-Crypto-CTF-Sprint-Day-4.md` | CTF sprint: lattice challenges — Merkle-Hellman, Coppersmith, HNP, analysis |
+| 602 | `09-Crypto-02/DAY-0602-Crypto-CTF-Sprint-Day-5.md` | CTF sprint: multi-attack — padding oracle+CBC-R, MT19937+CTR, Wiener+FR, GCM |
+| 603 | `09-Crypto-02/DAY-0603-Crypto-CTF-Sprint-Day-6.md` | CTF sprint: real-world bugs — CVE-2022-21449, Lucky Thirteen, JWT alg confusion |
+| 604 | `09-Crypto-02/DAY-0604-Crypto-CTF-Sprint-Day-7.md` | Timed exam: 5 problems, 3 hours, no hints — full module assessment |
+| 605 | `09-Crypto-02/DAY-0605-Crypto-CTF-Sprint-Day-8.md` | Module wrap-up: attack decision tree, complete checklist, prep for Module 10 |
+| 606 | `09-Crypto-02/DAY-0606-Post-Quantum-Preview.md` | Shor's algorithm, Grover's speedup, NIST PQC standards (ML-KEM, ML-DSA, SPHINCS+) |
+| 607 | `09-Crypto-02/DAY-0607-LWE-Kyber-Internals.md` | Module-LWE, R_q polynomial ring, ML-KEM keygen/encap/decap internals |
+| 608 | `09-Crypto-02/DAY-0608-PQC-Attack-Surface.md` | Decryption failure oracle, NTT timing side-channel, hybrid protocol risks |
+| 609 | `09-Crypto-02/DAY-0609-Crypto-Catch-Up.md` | Self-diagnosis, targeted drilling (Coppersmith/HNP/MT19937/Wiener), prep checklist |
+| 610 | `09-Crypto-02/DAY-0610-Crypto-Competency-Check.md` | Module 09 gate: written exam (CBC/Coppersmith/HNP) + live lab + self-assessment |
 
 ---
 
@@ -852,8 +897,38 @@ from a patch diff; analyse a malware sample
 | 616 | `10-MalwareAnalysis-01/DAY-0616-Sandbox-Evasion-Techniques.md` | Timing, VM detection, user interaction, sleep calls |
 | 617 | `10-MalwareAnalysis-01/DAY-0617-Unpacking-Malware.md` | OEP finding, dump + fix, manual unpacking |
 | 618 | `10-MalwareAnalysis-01/DAY-0618-Rootkit-and-Kernel-Malware.md` | DKOM, hook-based rootkits, kernel drivers |
-| 619 | `10-MalwareAnalysis-01/DAY-0619-Malware-Report-Writing.md` | Malware report structure, IOCs, MITRE ATT&CK mapping |
-| 620–650 | `10-MalwareAnalysis-01/DAY-XXXX-Malware-Practice.md` | Analyse samples from MalwareBazaar; produce reports |
+| 619 | `10-MalwareAnalysis-01/DAY-0619-Malware-Report-Writing.md` | Malware report structure, IOCs, MITRE ATT&CK mapping, YARA+Sigma rules |
+| 620 | `10-MalwareAnalysis-01/DAY-0620-Malware-Practice-Day-1.md` | Practice: Agent Tesla infostealer — .NET decompile, credential theft, SMTP exfil |
+| 621 | `10-MalwareAnalysis-01/DAY-0621-Malware-Practice-Day-2.md` | Practice: Mirai botnet ELF — XOR decode, credential list, C2 protocol, DDoS |
+| 622 | `10-MalwareAnalysis-01/DAY-0622-Malware-Practice-Day-3.md` | Practice: Cobalt Strike beacon — config extraction, JA3, named pipes, detection |
+| 623 | `10-MalwareAnalysis-01/DAY-0623-Malware-Practice-Day-4.md` | Practice: Office VBA macro dropper + LNK files, oledump/olevba, PS decode |
+| 624 | `10-MalwareAnalysis-01/DAY-0624-Malware-Practice-Day-5.md` | Practice: Ransomware encryption analysis — hybrid crypto, shadow copy deletion |
+| 625 | `10-MalwareAnalysis-01/DAY-0625-Malware-Practice-Day-6.md` | Unknown sample sprint: 15-min triage protocol + full analysis + review |
+| 626 | `10-MalwareAnalysis-01/DAY-0626-PDF-Malware-Analysis.md` | PDF structure, dangerous keys, JS stream extraction, scdbg shellcode emulation |
+| 627 | `10-MalwareAnalysis-01/DAY-0627-PDF-Exploit-Deep-Dive.md` | PDF exploit CVEs, shellcode decoding from %uXXXX, kill chain reconstruction |
+| 628 | `10-MalwareAnalysis-01/DAY-0628-JavaScript-Malware-Deobfuscation.md` | JS obfuscation taxonomy, multi-layer deobfuscation engine, WScript dropper patterns |
+| 629 | `10-MalwareAnalysis-01/DAY-0629-Browser-Based-Attack-Analysis.md` | Drive-by infection chain, exploit kit fingerprinting, PCAP redirect analysis |
+| 630 | `10-MalwareAnalysis-01/DAY-0630-PDF-JS-Practice-Sprint.md` | Timed practice: PDF + JS dropper + HTML malvertising (3 × 90 min sprints) |
+| 631 | `10-MalwareAnalysis-01/DAY-0631-Fileless-Malware-Fundamentals.md` | LOLBin catalogue, AMSI bypass techniques, PowerShell download cradle zoo |
+| 632 | `10-MalwareAnalysis-01/DAY-0632-PowerShell-Malware-Analysis.md` | PS obfuscation deobfuscation, Empire agent, Script Block Logging (Event 4104) |
+| 633 | `10-MalwareAnalysis-01/DAY-0633-WMI-Registry-Persistence.md` | WMI Filter/Consumer/Binding triad, COM hijacking, registry payload blobs |
+| 634 | `10-MalwareAnalysis-01/DAY-0634-Process-Hollowing-Advanced-Injection.md` | Process hollowing, reflective DLL injection, APC injection, VAD mismatch detection |
+| 635 | `10-MalwareAnalysis-01/DAY-0635-Fileless-Malware-Practice-Sprint.md` | Practice: LOLBin abuse, WMI persistence, process injection memory analysis |
+| 636 | `10-MalwareAnalysis-01/DAY-0636-NjRat-Analysis.md` | NjRat/Bladabindi VB.NET RAT — dnSpy analysis, pipe-delimited protocol, detection |
+| 637 | `10-MalwareAnalysis-01/DAY-0637-AsyncRAT-Analysis.md` | AsyncRAT C# RAT — AES config extraction, TLS certificate pinning, host detection |
+| 638 | `10-MalwareAnalysis-01/DAY-0638-Quasar-RAT-Analysis.md` | Quasar RAT — Protobuf protocol, APT10/TA459 attribution, config decryption |
+| 639 | `10-MalwareAnalysis-01/DAY-0639-APT-Tooling-Patterns.md` | PlugX/DLL side-loading, APT OPSEC, detection vs attribution trade-off |
+| 640 | `10-MalwareAnalysis-01/DAY-0640-APT-RAT-Practice-Sprint.md` | Unknown RAT sprint: family ID, config extraction, protocol analysis, IR report |
+| 641 | `10-MalwareAnalysis-01/DAY-0641-Volatility3-Fundamentals.md` | Volatility3 setup, plugin reference (pslist/psscan/malfind/netstat), workflow |
+| 642 | `10-MalwareAnalysis-01/DAY-0642-Memory-Forensics-Process-Network.md` | EPROCESS structure, parent-child anomalies, handle analysis, network forensics |
+| 643 | `10-MalwareAnalysis-01/DAY-0643-Memory-Forensics-Malware-Detection.md` | malfind internals, false positive reduction, YARA-in-memory scanning |
+| 644 | `10-MalwareAnalysis-01/DAY-0644-Memory-Forensics-Lab.md` | Guided 10-step memory investigation: orient → processes → inject → extract → report |
+| 645 | `10-MalwareAnalysis-01/DAY-0645-Memory-Forensics-Practice-Sprint.md` | Unguided timed sprint: unknown dump → full investigation report in 150 minutes |
+| 646 | `10-MalwareAnalysis-01/DAY-0646-Advanced-Persistence-Bootkits.md` | UEFI implants, LoJax/CosmicStrand/MoonBounce, MBR structure, SPI flash attack surface |
+| 647 | `10-MalwareAnalysis-01/DAY-0647-Bootkit-Analysis-Lab.md` | Lab: MBR parsing, entropy detection, CHIPSEC, UEFITool analysis |
+| 648 | `10-MalwareAnalysis-01/DAY-0648-Malware-Analysis-Module-Review.md` | Module 10 topic map, 28-item self-assessment, tool command reference, decision tree |
+| 649 | `10-MalwareAnalysis-01/DAY-0649-Malware-Analysis-Final-Sprint.md` | 3.5-hour pre-gate sprint: triage, static, dynamic, memory analysis, full report |
+| 650 | `10-MalwareAnalysis-01/DAY-0650-Malware-Analysis-Competency-Check.md` | Competency gate: 9 pass criteria, 7-section report template, 15 oral defence questions |
 
 ---
 
@@ -866,11 +941,17 @@ from a patch diff; analyse a malware sample
 | 653 | `10-VulnResearch-01/DAY-0653-Fuzzing-Fundamentals.md` | AFL++, libFuzzer — instrumentation, seed corpus, crash triage |
 | 654 | `10-VulnResearch-01/DAY-0654-Fuzzing-Lab.md` | Lab: fuzz a parsing library, find a crash |
 | 655 | `10-VulnResearch-01/DAY-0655-Coverage-Guided-Fuzzing.md` | Coverage feedback, persistent mode, structured input |
-| 656 | `10-VulnResearch-01/DAY-0656-Patch-Diffing-and-CVE-Reproduction.md` | BinDiff patch analysis, root cause, exploit development |
+| 656 | `10-VulnResearch-01/DAY-0656-Patch-Diffing-CVE-Reproduction.md` | BinDiff/source patch diff, 1-day attack window, PoC development from commit |
 | 657 | `10-VulnResearch-01/DAY-0657-CVE-Reproduction-Lab.md` | Lab: reproduce a CVE from patch diff to working PoC |
 | 658 | `10-VulnResearch-01/DAY-0658-Responsible-Disclosure-Deep-Dive.md` | CVE process, coordinated disclosure, bug bounty vs CVE |
-| 659 | `10-VulnResearch-01/DAY-0659-Writing-a-Security-Advisory.md` | Full advisory format, timeline, PoC, remediation |
-| 660–700 | `10-VulnResearch-01/DAY-XXXX-Research-Sprint.md` | Audit + fuzz 2 open-source projects; produce findings |
+| 659 | `10-VulnResearch-01/DAY-0659-Writing-Security-Advisory.md` | Full advisory format, CVSS scoring, impact statement, disclosure email draft |
+| 660 | `10-VulnResearch-01/DAY-0660-Static-Analysis-Semgrep-CodeQL.md` | Semgrep rule writing, CodeQL taint tracking, SAST CI/CD integration |
+| 661 | `10-VulnResearch-01/DAY-0661-Advanced-Fuzzing-Grammar-Protocol.md` | Grammar-Mutator, Boofuzz network protocol fuzzing, TLS bypass strategies |
+| 662 | `10-VulnResearch-01/DAY-0662-Bug-Class-Integer-Overflow-Format-String.md` | CWE-190/197 integer overflow taxonomy, CWE-134 format string, PoC templates |
+| 663 | `10-VulnResearch-01/DAY-0663-Bug-Class-UAF-Heap-Corruption.md` | CWE-416 UAF, double-free, tcache poisoning, heap overlay, ASan defences |
+| 664 | `10-VulnResearch-01/DAY-0664-VulnResearch-Practice-Sprint-Day1.md` | Sprint day 1: target selection, Semgrep sweep, fuzzing campaign, crash triage |
+| 665 | `10-VulnResearch-01/DAY-0665-VulnResearch-Practice-Sprint-Day2.md` | Sprint day 2: PoC development, minimisation, CVSS scoring, advisory write-up |
+| 666–700 | `10-VulnResearch-01/DAY-XXXX-Research-Sprint.md` | Audit + fuzz open-source projects; produce findings; module competency check |
 
 ---
 
