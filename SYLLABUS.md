@@ -1,7 +1,7 @@
 ---
 title: "Ghost's Training Programme — Year 1: Bug Bounty Hunter | Year 2: Deep Hacker"
 tags: [syllabus, curriculum, roadmap, bug-bounty, hacking]
-updated: 2026-04-29
+updated: 2026-05-12
 ---
 
 # Ghost's 2-Year Cybersecurity Training Programme
@@ -18,10 +18,11 @@ updated: 2026-04-29
 
 | Property | Value |
 |---|---|
-| Duration | 2 years (730 days) |
+| Duration | 2 years + career acceleration (750 days) |
 | Daily commitment | 1 structured lesson per day (denser in Year 1) |
 | Year 1 goal | Bug bounty hunter — find and earn from real vulnerabilities by Day 365 |
 | Year 2 goal | Deep dive — binary exploitation, reversing, red team ops, vuln research |
+| Post-graduate goal | Specialization, public profile, career positioning — Days 731–750 |
 | Methodology | The Ghost Method: Recon → Exploit → Detect → Harden |
 | Assessment | Competency-based gates, not time-based certificates |
 | Tools philosophy | Understand the technique first; the tool is just automation |
@@ -951,7 +952,41 @@ from a patch diff; analyse a malware sample
 | 663 | `10-VulnResearch-01/DAY-0663-Bug-Class-UAF-Heap-Corruption.md` | CWE-416 UAF, double-free, tcache poisoning, heap overlay, ASan defences |
 | 664 | `10-VulnResearch-01/DAY-0664-VulnResearch-Practice-Sprint-Day1.md` | Sprint day 1: target selection, Semgrep sweep, fuzzing campaign, crash triage |
 | 665 | `10-VulnResearch-01/DAY-0665-VulnResearch-Practice-Sprint-Day2.md` | Sprint day 2: PoC development, minimisation, CVSS scoring, advisory write-up |
-| 666–700 | `10-VulnResearch-01/DAY-XXXX-Research-Sprint.md` | Audit + fuzz open-source projects; produce findings; module competency check |
+| 666 | `10-VulnResearch-01/DAY-0666-Open-Source-Audit-Campaign-Start.md` | Audit campaign day 1: target selection criteria, ASan build, codebase orientation, Semgrep pre-scan |
+| 667 | `10-VulnResearch-01/DAY-0667-Audit-Campaign-Codebase-Navigation.md` | Audit campaign day 2: source/sink taint mapping, Function Audit Protocol, AFL++ launch |
+| 668 | `10-VulnResearch-01/DAY-0668-Audit-Campaign-Deep-Manual-Audit.md` | Audit campaign day 3: arithmetic-on-user-data annotation, crash triage, candidate bug documentation |
+| 669 | `10-VulnResearch-01/DAY-0669-Audit-Campaign-PoC-Development.md` | Audit campaign day 4: Python PoC template, ASan crash confirmation, GDB analysis, PoC minimisation |
+| 670 | `10-VulnResearch-01/DAY-0670-Audit-Campaign-Finding-Report.md` | Audit campaign day 5: full security advisory, CVSS v3.1 scoring, disclosure decision tree, retrospective |
+| 671 | `10-VulnResearch-01/DAY-0671-Bug-Class-Type-Confusion.md` | CWE-843 type confusion: void* cast, union abuse, tagged type, JIT bypass; CVE-2021-30551 (Chrome V8) |
+| 672 | `10-VulnResearch-01/DAY-0672-Type-Confusion-Lab.md` | Lab: minidoc.c TOCTOU type confusion — Python PoC, redirect dispatch to secret_shell, GDB/UBSan |
+| 673 | `10-VulnResearch-01/DAY-0673-Bug-Class-OOB-Read-Write.md` | CWE-125/787 OOB read/write: five root causes, exploitation path, CVE-2021-22600 (Linux packet socket) |
+| 674 | `10-VulnResearch-01/DAY-0674-OOB-Lab.md` | Lab: minildb.c signedness confusion + minipacker.c integer overflow — PoC templates, ASan confirmation |
+| 675 | `10-VulnResearch-01/DAY-0675-Milestone-675-Mid-Module-Retrospective.md` | Mid-module retrospective: Module 10A/10B skill assessment, gap analysis, forward plan for Days 676–700 |
+| 676 | `10-VulnResearch-01/DAY-0676-Network-Protocol-Fuzzing.md` | Stateful network fuzzing: Boofuzz session/target/request model, protocol state machine, DaemonMonitor |
+| 677 | `10-VulnResearch-01/DAY-0677-Network-Fuzzing-Lab-Boofuzz.md` | Lab: vuln_daemon.c (stack overflow + heap OOB) — Boofuzz harness, DaemonMonitor, manual reproduction |
+| 678 | `10-VulnResearch-01/DAY-0678-Dependency-Confusion-Supply-Chain.md` | Supply chain attacks: dependency confusion, SCA tools (npm audit, pip-audit, cargo audit), Alex Birsan case |
+| 679 | `10-VulnResearch-01/DAY-0679-Supply-Chain-Attack-Lab.md` | Lab: simulate dependency confusion with Verdaccio, malicious postinstall, mitigation implementation |
+| 680 | `10-VulnResearch-01/DAY-0680-Kernel-Module-Vulnerability-Research.md` | Kernel LKM audit: ioctl surface, copy_from_user, KASAN, Syzkaller, CVE-2022-0847 (Dirty Pipe) |
+| 681 | `10-VulnResearch-01/DAY-0681-Kernel-Module-Audit-Lab.md` | Lab: vuln_driver.c (3 bugs: missing copy_from_user, integer overflow, UAF) — userspace exploits, KASAN |
+| 682 | `10-VulnResearch-01/DAY-0682-JavaScript-Engine-Vulnerability-Intro.md` | V8 internals: JIT pipeline, Smi/HeapObject, type confusion via TurboFan, 6-stage exploit chain |
+| 683 | `10-VulnResearch-01/DAY-0683-VulnResearch-Practice-Sprint-Day3.md` | 8-hour sprint day 3: new target, full pipeline, timed phases, retrospective vs Day 666 campaign |
+| 684 | `10-VulnResearch-01/DAY-0684-Module-Review-and-Self-Assessment.md` | Module 10 review: malware + vuln research reference cards, 12 oral defence questions, timed drills |
+| 685 | `10-VulnResearch-01/DAY-0685-Module-Competency-Check-Preparation.md` | Gate prep: Day 700 component simulation (2.5h malware + 3h vuln research + 30min oral), logistics checklist |
+| 686 | `10-VulnResearch-01/DAY-0686-AFL-Advanced-Persistent-Mode.md` | AFL++ persistent mode (`__AFL_LOOP`), shared-memory fuzzing, custom Python mutators, parallel campaigns |
+| 687 | `10-VulnResearch-01/DAY-0687-CodeQL-Taint-Analysis.md` | CodeQL taint-tracking queries from scratch: sources, sinks, sanitisers, struct-aware flow, integer-overflow pattern |
+| 688 | `10-VulnResearch-01/DAY-0688-Heap-Exploitation-Researcher-Perspective.md` | Four-question exploitability framework: controlled content, controlled target, post-corruption outcome, attack surface |
+| 689 | `10-VulnResearch-01/DAY-0689-Anti-Analysis-Sandbox-Evasion.md` | Sandbox evasion: CPUID/VM artefacts, timing delays, mouse activity checks; anti-debug: IsDebuggerPresent, PAC |
+| 690 | `10-VulnResearch-01/DAY-0690-Advanced-YARA-Engineering.md` | Advanced YARA: pe module (imports, sections, imphash), math entropy, hash module, memory rules, performance tuning |
+| 691 | `10-VulnResearch-01/DAY-0691-libFuzzer-Harness-Engineering.md` | libFuzzer harness patterns: simple parser, stateful API, FuzzedDataProvider, coverage measurement with llvm-cov |
+| 692 | `10-VulnResearch-01/DAY-0692-Variant-Analysis.md` | Variant analysis workflow: extract pattern from CVE, grep/CodeQL sweep, triage, variant report, related projects |
+| 693 | `10-VulnResearch-01/DAY-0693-NVD-CVE-Reading-as-Attacker.md` | Decoding NVD CVSS vectors as exploitation requirements; mining references for PoC material; 20-CVE triage sprint |
+| 694 | `10-VulnResearch-01/DAY-0694-Dynamic-Binary-Instrumentation.md` | DBI frameworks: Frida API hooks, Intel Pin architecture, taint tracking without source, DynamoRIO coverage |
+| 695 | `10-VulnResearch-01/DAY-0695-Container-Security-Vulnerabilities.md` | CVE-2019-5736 (runc /proc/self/exe), CVE-2022-0185 (fsconfig heap OOB), container escape attack surface map |
+| 696 | `10-VulnResearch-01/DAY-0696-Practice-Malware-Analysis-Gap-Closure.md` | Targeted malware drills (static, dynamic, .NET, memory forensics, YARA) keyed to Day 684 weak-rated skills |
+| 697 | `10-VulnResearch-01/DAY-0697-Practice-VulnResearch-Gap-Closure.md` | Targeted VulnResearch drills (pipeline speed, AFL++, taint tracking, CVSS, advisory) keyed to Day 684 ratings |
+| 698 | `10-VulnResearch-01/DAY-0698-Final-PreGate-Simulation.md` | Full Day 700 dress rehearsal: 2.5h malware + 3h vuln research + 30min oral, all timed in real conditions |
+| 699 | `10-VulnResearch-01/DAY-0699-Gate-Day-Eve.md` | Final toolchain verification, reference card review, gate format reminder, evening protocol |
+| 700 | `10-VulnResearch-01/DAY-0700-Module-Competency-Check.md` | **GATE: Module 10** — malware analysis exercise + vulnerability research exercise + oral defence |
 
 ---
 
@@ -961,15 +996,64 @@ from a patch diff; analyse a malware sample
 
 | Day | File | Topic |
 |---|---|---|
-| 701 | `11-GhostLevel/DAY-0701-Hardware-Security-UART-JTAG.md` | JTAG, UART, firmware extraction, side-channel intro |
-| 702 | `11-GhostLevel/DAY-0702-Firmware-Analysis.md` | binwalk, squashfs, credential extraction, backdoors |
-| 703 | `11-GhostLevel/DAY-0703-Mobile-Advanced-iOS-Jailbreak.md` | iOS binary protections, Frida on jailbroken device |
-| 704 | `11-GhostLevel/DAY-0704-Zero-Day-Mindset.md` | What makes a zero-day, variant analysis, bug classes |
-| 705 | `11-GhostLevel/DAY-0705-Year-2-Review-and-Synthesis.md` | Full review: binary → reversing → red team → research |
-| 706 | `11-GhostLevel/DAY-0706-Ghost-Level-Preparation.md` | Prepare for the 48-hour challenge: tools, methodology |
-| 707–728 | `11-GhostLevel/DAY-XXXX-Ghost-Level-48h-Engagement.md` | **48-hour solo engagement on an unknown lab target** |
-| 729 | `11-GhostLevel/DAY-0729-Ghost-Level-Debrief.md` | Debrief: timeline, findings, what was missed and why |
+| 701 | `11-GhostLevel/DAY-0701-Hardware-Security-UART-JTAG.md` | UART console root shell, JTAG debug interface, PCB pad identification, SPI flash dump, OpenOCD |
+| 702 | `11-GhostLevel/DAY-0702-Firmware-Analysis.md` | binwalk extraction, squashfs/jffs2 filesystem, hardcoded credentials, SSH key hunting, QEMU emulation |
+| 703 | `11-GhostLevel/DAY-0703-Mobile-Advanced-iOS-Jailbreak.md` | PAC, iOS sandbox, jailbreak architecture, class-dump, Frida cert pinning bypass, anti-jailbreak bypass |
+| 704 | `11-GhostLevel/DAY-0704-Zero-Day-Mindset.md` | Zero-day vs N-day, hypothesis-driven research, bug class distribution, variant strategy, 30-day research plan |
+| 705 | `11-GhostLevel/DAY-0705-Year2-Review-Synthesis.md` | Year 2 module map, cross-module skill intersections, personal competency rating, Ghost Level target profile |
+| 706 | `11-GhostLevel/DAY-0706-Ghost-Level-Preparation.md` | Tool verification, engagement methodology, note-taking discipline, OPSEC checklist |
+| 707 | `11-GhostLevel/DAY-0707-Ghost-Level-Lab-Briefing.md` | Project SABLE rules of engagement, network topology, per-target service inventory |
+| 708 | `11-GhostLevel/DAY-0708-Phase1-Initial-Recon.md` | Phase 1: host discovery, full port scan, per-target enumeration, attack surface map |
+| 709 | `11-GhostLevel/DAY-0709-Phase2-Web-App-Exploitation.md` | Phase 2: sable-web JWT bypass, SSRF, API exploitation, web findings |
+| 710 | `11-GhostLevel/DAY-0710-Phase2-PostWeb-Internal-Discovery.md` | Phase 2: post-web post-exploitation, LinPEAS, pivot setup, credential reuse |
+| 711 | `11-GhostLevel/DAY-0711-Phase3-Network-Service-Enum.md` | Phase 3: binary acquisition, TLV protocol probing, crash fuzzing, static triage |
+| 712 | `11-GhostLevel/DAY-0712-Phase3-Binary-Reversing.md` | Phase 3: Ghidra project, handler audit worksheets, crash correlation, exploitation prep |
+| 713 | `11-GhostLevel/DAY-0713-Phase3-Binary-Exploitation.md` | Phase 3: pwntools ret2libc template, offset calculation, protections, reverse shell |
+| 714 | `11-GhostLevel/DAY-0714-Phase4-Pivoting-AD-Recon.md` | Phase 4: pivot extension to sable-dc, BloodHound, LDAP enum, Kerberoasting, AS-REP |
+| 715 | `11-GhostLevel/DAY-0715-Phase4-AD-Exploitation.md` | Phase 4: BloodHound-guided PrivEsc, DCSync, Golden Ticket, DA proof collection |
+| 716 | `11-GhostLevel/DAY-0716-Phase4-Domain-Persistence.md` | Phase 4: AdminSDHolder backdoor, DSRM hash, domain-wide credential harvest |
+| 717 | `11-GhostLevel/DAY-0717-Phase5-IoT-Analysis.md` | Phase 5: sable-iot enumeration, firmware download, binwalk extraction, vuln hypothesis |
+| 718 | `11-GhostLevel/DAY-0718-Phase5-IoT-Exploitation.md` | Phase 5: credential testing, CGI command injection, reverse shell, IoT finding card |
+| 719 | `11-GhostLevel/DAY-0719-Phase5-SableStore-Access.md` | Phase 5: multi-hop pivot to sable-store, SMB/NFS enum, sensitive data exfiltration |
+| 720 | `11-GhostLevel/DAY-0720-Phase5-Exfiltration-Evidence.md` | Phase 5: evidence inventory, packaging script, business impact calculation |
+| 721 | `11-GhostLevel/DAY-0721-Phase5-Persistence-C2.md` | Phase 5: per-host persistence (cron/SSH/Golden Ticket/rc.local), ATT&CK mapping |
+| 722 | `11-GhostLevel/DAY-0722-Phase5-OPSEC-Log-Review.md` | Phase 5: attacker self-review, log analysis on all hosts, detection gap documentation |
+| 723 | `11-GhostLevel/DAY-0723-Phase6-Report-Timeline.md` | Phase 6: executive summary, scope section, full attack timeline narrative |
+| 724 | `11-GhostLevel/DAY-0724-Phase6-Vulnerability-Advisories.md` | Phase 6: advisory template, F-01 JWT bypass, F-02 stack overflow, risk register |
+| 725 | `11-GhostLevel/DAY-0725-Phase6-ATTACK-Mapping-Final.md` | Phase 6: ATT&CK Navigator mapping, remediation roadmap, report completion checklist |
+| 726 | `11-GhostLevel/DAY-0726-Ghost-Level-Debrief.md` | Debrief: timeline, findings, what was missed and why |
+| 727–729 | `11-GhostLevel/DAY-XXXX-Ghost-Level-Extended.md` | Extended engagement: bonus objectives, second-pass findings, purple team exercise |
 | 730 | `11-GhostLevel/DAY-0730-Ghost-Level-Competency-Gate.md` | **GATE: Ghost Level** — findings report + live review |
+
+---
+
+### 12-PostGhostLevel — Career Acceleration (Days 731–750)
+
+Goal: Transition from trained practitioner to professional. Build a career plan, a
+public profile, a specialization, and the professional skills to operate at senior level.
+
+| Day | File | Topic |
+|---|---|---|
+| 731 | `12-PostGhostLevel/DAY-0731-Career-Path-Planning.md` | Career tracks: red team, malware, VR, AppSec — skills audit and 12-month plan |
+| 732 | `12-PostGhostLevel/DAY-0732-Building-Public-Profile.md` | Write-ups, CVEs, conference talks, blog, GitHub — public research identity |
+| 733 | `12-PostGhostLevel/DAY-0733-CVE-Credits-Disclosure-Pipeline.md` | CVE acquisition, CNA system, 90-day disclosure timeline, attribution strategy |
+| 734 | `12-PostGhostLevel/DAY-0734-Certification-Strategy.md` | OSEP, OSED, BSCP, PNPT — what matters, for whom, at what stage |
+| 735 | `12-PostGhostLevel/DAY-0735-Threat-Intel-Fundamentals.md` | Intel cycle, IOC vs TTP pyramid, STIX/TAXII, infrastructure pivoting |
+| 736 | `12-PostGhostLevel/DAY-0736-Threat-Intel-Lab-MISP.md` | Lab: MISP setup, event creation, ATT&CK galaxy, STIX export, TAXII |
+| 737 | `12-PostGhostLevel/DAY-0737-Advanced-Detection-Engineering.md` | Detection-as-Code, Sigma at scale, coverage matrix, CI/CD pipeline |
+| 738 | `12-PostGhostLevel/DAY-0738-Purple-Team-Leadership.md` | Running a purple team exercise: emulation plan, feedback loop, reporting |
+| 739 | `12-PostGhostLevel/DAY-0739-Continuous-Fuzzing-OSS-Fuzz.md` | OSS-Fuzz architecture, writing a fuzz target, ClusterFuzz, attribution |
+| 740 | `12-PostGhostLevel/DAY-0740-Security-Research-Lab-Design.md` | Home lab hardware tiers, network segmentation, malware storage, cloud burst |
+| 741 | `12-PostGhostLevel/DAY-0741-Browser-Security-V8-Research.md` | V8 JIT pipeline, exploitation primitives, sandbox escape, Chrome VRP |
+| 742 | `12-PostGhostLevel/DAY-0742-Custom-Implant-Development.md` | Go HTTP C2 beacon, sleep jitter, detection surface, defensive feedback loop |
+| 743 | `12-PostGhostLevel/DAY-0743-Writing-Security-Research-Papers.md` | Academic vs practitioner format, paper structure, venue selection, CFP writing |
+| 744 | `12-PostGhostLevel/DAY-0744-CTF-Team-Strategy.md` | Jeopardy vs attack-defense, team roles, competition-time decisions, write-ups |
+| 745 | `12-PostGhostLevel/DAY-0745-Security-Interview-Preparation.md` | Technical rounds, system design for security, hands-on challenges, presenting background |
+| 746 | `12-PostGhostLevel/DAY-0746-OPSEC-for-Researchers.md` | Research infrastructure separation, malware handling, legal protections |
+| 747 | `12-PostGhostLevel/DAY-0747-IR-Leadership.md` | Running an IR engagement, tabletop exercises, retainer scoping |
+| 748 | `12-PostGhostLevel/DAY-0748-Methodology-Crystallisation.md` | Personal playbook, Obsidian KM system, iteration discipline |
+| 749 | `12-PostGhostLevel/DAY-0749-Specialization-Research-Plan.md` | 30-day specialization plan template, domain-specific plans, accountability |
+| 750 | `12-PostGhostLevel/DAY-0750-Programme-Complete.md` | **MILESTONE: Programme Complete** — 750-day retrospective, what comes next |
 
 ---
 
@@ -1011,6 +1095,7 @@ learn-security/
 ├── 10-MalwareAnalysis-01/(Days 611–650) Malware Analysis
 ├── 10-VulnResearch-01/   (Days 651–700) Vulnerability Research
 ├── 11-GhostLevel/        (Days 701–730) Ghost Level Engagement
+├── 12-PostGhostLevel/    (Days 731–750) Career Acceleration
 └── knowledge-base/       Reference material linked from lessons
 ```
 
